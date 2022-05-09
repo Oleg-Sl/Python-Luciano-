@@ -49,15 +49,15 @@ deck = FrenchDeck()
 # print(FrenchDeck.ranks)
 # print(FrenchDeck.suits)
 #
-suit_values = dict(spades=3, diamonds=2, clubs=1, hearts=0)
-
-
-def spades_hight(card):
-    rank_value = FrenchDeck.ranks.index(card.rank)
-    priority = rank_value * len(suit_values) + suit_values[card.suit]
-    print(priority)
-    return priority
-
-
-for card in sorted(deck, key=spades_hight):
-    print(card)
+# suit_values = dict(spades=3, diamonds=2, clubs=1, hearts=0)
+#
+#
+# def spades_hight(card):
+#     rank_value = FrenchDeck.ranks.index(card.rank)
+#     priority = rank_value * len(suit_values) + suit_values[card.suit]
+#     print(priority)
+#     return priority
+#
+#
+# for card in sorted(deck, key=spades_hight):
+#     print(card)
